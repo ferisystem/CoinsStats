@@ -12,7 +12,7 @@
     <img src="img/Logo.png" alt="Logo" width="150" height="150">
   </a>
 
-  <h3 align="center">Coins Stats</h3>
+  <h1 align="center">Coins Stats</h3>
 
   <p align="center">
     Stats of 18 popular coins + BTC & ETH Dominance
@@ -57,7 +57,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="img/screenshot.png" alt="Sample" align="center">
+[Channel CoinsStats for See how it is](https://t.me/CoinsStats)
 
 An efficient [Telegram-bot](https://core.telegram.org/bots/api) for getting the statistics of famous **Crypto Currency** markets' coins and tokens in Telegram which can be installed easily
 
@@ -122,14 +123,66 @@ This is a help for installation.
    ```PY
    SUDO_ID = 'ENTER SUDO_ID'
    ```
+7. Now you have to add this command in `crontab -e` on ubuntu terminal
+   ```sh
+   * * * * * python3.6 ./CoinsStats/bot.py
+   ```
 
 </ul>
 </ul>
 
-# CoinsStats
-Stats of 18 popular coins + BTC & ETH Dominance
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
 
 
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Dear programmer, you can help me in this project. how? read this text.
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Img Shields](https://shields.io)
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Pages](https://pages.github.com)
+* [Animate.css](https://daneden.github.io/animate.css)
+* [Loaders.css](https://connoratherton.com/loaders)
+* [Slick Carousel](https://kenwheeler.github.io/slick)
+* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
+* [Sticky Kit](http://leafo.net/sticky-kit)
+* [JVectorMap](http://jvectormap.com)
+* [Font Awesome](https://fontawesome.com)
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
 [forks-shield]: https://img.shields.io/github/forks/ferisystem/CoinsStats.svg?style=for-the-badge
 [forks-url]: https://github.com/ferisystem/CoinsStats/network/members
 [stars-shield]: https://img.shields.io/github/stars/ferisystem/CoinsStats.svg?style=for-the-badge
