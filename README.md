@@ -83,11 +83,13 @@ This is a help for installation.
 <ul>
 
 ### Prerequisites
+<ul>
 * Ubuntu 16.04+ (I prefer 16.04)
 * You have to installed Python3.6 because [Telethon](https://github.com/LonamiWebs/Telethon) need Python3.6. so follow helps on google for "install Python3.6 on ubuntu"
 * Get a API Key at [coinmarketcap.com](https://coinmarketcap.com)
 * Get API_HASH & API_ID at [my.telegram.org](https://my.telegram.org/)
 * Get Bot_Token at [Botfather](https://telegram.me/botfather)
+</ul>
 
 ### Installation
 
@@ -97,24 +99,24 @@ This is a help for installation.
    ```sh
    git clone https://github.com/ferisystem/CoinsStats.git
    ```
-2. Enter your Bot_Token in `config.js`
+2. Enter your Bot_Token in `config.py`
    ```PY
    BOT_TOKEN = 'ENTER BOT_TOKEN'
    ```
-3. Enter your api_hash & api_id in `config.js`
+3. Enter your api_hash & api_id in `config.py`
    ```PY
    API_HASH = 'ENTER API_HASH'
    API_ID = 'ENTER API_ID'
    ```
-4. Enter your Coinmarketcap API in `config.js`
+4. Enter your Coinmarketcap API in `config.py`
    ```PY
    CMP_API_KEY = 'ENTER CoinMarketCap API'
    ```
-5. Enter your Channel/SuperGroup/Group/Private Telegram ID in `config.js`
+5. Enter your Channel/SuperGroup/Group/Private Telegram ID in `config.py`
    ```PY
    DESTINATION_ID = 'ENTER DESTINATION_ID'
    ```
-6. Enter your Private Telegram ID in `config.js` for receive Exceptions & Erros
+6. Enter your Private Telegram ID in `config.py` for receive Exceptions & Erros
    ```PY
    SUDO_ID = 'ENTER SUDO_ID'
    ```
