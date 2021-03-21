@@ -168,9 +168,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Alireza Fereidouni (ferisystem) - [@ferisystem](https://telegram.me/ferisystem) - feri.sys13@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [github.com/ferisystem/CoinsStats](https://github.com/ferisystem/CoinsStats)
 
 
 
