@@ -17,7 +17,7 @@
   <p align="center">
     Stats of 18 popular coins + BTC & ETH Dominance
     <br />
-    <a href="https://github.com/ferisystem/CoinsStats"><strong>Explore the docs »</strong></a>
+    <a href="#getting-started"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/ferisystem/CoinsStats">View Demo</a>
@@ -63,6 +63,7 @@
 <p align="center">
   
 [CoinsStats Channel](https://telegram.me/CoinsStats) on Telegram for how it is
+
 </p>
 
 An efficient [Telegram-bot](https://core.telegram.org/bots/api) for getting the statistics of famous **Crypto Currency** markets' coins and tokens in Telegram which can be installed easily
@@ -97,6 +98,7 @@ This is a help for installation.
 * Get a API Key at [coinmarketcap.com](https://coinmarketcap.com)
 * Get API_HASH & API_ID at [my.telegram.org](https://my.telegram.org/)
 * Get Bot_Token at [Botfather](https://telegram.me/botfather)
+* Get Chat ID at Telegram app with forward a message to [userinfobot](https://telegram.me/userinfobot) from which chat you want to receive Stats
 </ul>
 
 ### Installation
@@ -122,7 +124,7 @@ This is a help for installation.
    ```
 5. Enter your Channel/SuperGroup/Group/Private Telegram ID in `config.py`
    ```PY
-   DESTINATION_ID = 'ENTER DESTINATION_ID'
+   CHAT_ID = 'ENTER DESTINATION_ID'
    ```
 6. Enter your Private Telegram ID in `config.py` for receive Exceptions & Erros
    ```PY
@@ -174,17 +176,9 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+* [Ali Najafi](https://github.com/AliNajafi1998)
+
+
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
