@@ -172,7 +172,7 @@ Alireza Fereidouni (ferisystem) - [@ferisystem](https://telegram.me/ferisystem) 
 
 Project Link: [github.com/ferisystem/CoinsStats](https://github.com/ferisystem/CoinsStats)
 
-
+Example Bot: [@CoinsStats](https://telegram.me/CoinsStats)
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
