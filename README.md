@@ -57,9 +57,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<p align="center">
 <img src="img/screenshot.png" alt="Sample" align="center">
-[Channel CoinsStats for See how it is](https://t.me/CoinsStats)
-
+</p>
+<p>
+  
+[CoinsStats Channel](https://telegram.me/CoinsStats) on Telegram for how it is
+</p>
 An efficient [Telegram-bot](https://core.telegram.org/bots/api) for getting the statistics of famous **Crypto Currency** markets' coins and tokens in Telegram which can be installed easily
 
 ### Built With
