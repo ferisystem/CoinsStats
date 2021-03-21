@@ -60,10 +60,11 @@
 <p align="center">
 <img src="img/screenshot.png" alt="Sample" align="center">
 </p>
-<p>
+<p align="center">
   
 [CoinsStats Channel](https://telegram.me/CoinsStats) on Telegram for how it is
 </p>
+
 An efficient [Telegram-bot](https://core.telegram.org/bots/api) for getting the statistics of famous **Crypto Currency** markets' coins and tokens in Telegram which can be installed easily
 
 ### Built With
