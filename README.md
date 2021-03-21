@@ -85,12 +85,12 @@ This is a help for installation.
 ### Prerequisites
 
 <ul>
+
 * Ubuntu 16.04+ (I prefer 16.04)
 * You have to installed Python3.6 because [Telethon](https://github.com/LonamiWebs/Telethon) need Python3.6. so follow helps on google for "install Python3.6 on ubuntu"
 * Get a API Key at [coinmarketcap.com](https://coinmarketcap.com)
 * Get API_HASH & API_ID at [my.telegram.org](https://my.telegram.org/)
 * Get Bot_Token at [Botfather](https://telegram.me/botfather)
-
 </ul>
 
 ### Installation
