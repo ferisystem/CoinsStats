@@ -20,7 +20,7 @@
     <a href="#getting-started"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ferisystem/CoinsStats">View Demo</a>
+    <a href="https://telegram.me/CoinsStats">View Demo</a>
     ·
     <a href="https://github.com/ferisystem/CoinsStats/issues">Report Bug</a>
     ·
@@ -60,11 +60,6 @@
 <p align="center">
 <img src="img/screenshot.png" alt="Sample" align="center">
 </p>
-<p align="center">
-  
-[CoinsStats Channel](https://telegram.me/CoinsStats) on Telegram for how it is
-
-</p>
 
 An efficient [Telegram-bot](https://core.telegram.org/bots/api) for getting the statistics of famous **Crypto Currency** markets' coins and tokens in Telegram which can be installed easily
 
@@ -77,7 +72,7 @@ This section should list any major frameworks that you built your project using.
 * [datetime module](https://docs.python.org/3/library/datetime.html)
 * [asyncio module](https://docs.python.org/3/library/asyncio.html)
 * [requests module](https://requests.readthedocs.io/en/master)
-* [Redis Database](https://github.com/andymccurdy/redis-pyr)
+* [Redis Database](https://github.com/andymccurdy/redis-py)
 * [Coinstats app Api](https://coinstats.app)
 * [CoinMarketCap Api](https://coinmarketcap.com/)
 
@@ -142,7 +137,7 @@ This is a help for installation.
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/ferisystem/CoinsStats/issues) for a list of proposed features (and known issues).
 
 
 
