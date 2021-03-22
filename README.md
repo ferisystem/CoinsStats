@@ -90,10 +90,10 @@ This is a help for installation.
 
 * Ubuntu 16.04+ (I prefer 16.04)
 * You have to installed Python3.6 because [Telethon](https://github.com/LonamiWebs/Telethon) need Python3.6. so follow helps on google for "install Python3.6 on ubuntu"
-* Get a API Key at [coinmarketcap.com](https://coinmarketcap.com)
+* Get an API Key at [coinmarketcap.com](https://coinmarketcap.com)
 * Get API_HASH & API_ID at [my.telegram.org](https://my.telegram.org/)
-* Get Bot_Token at [Botfather](https://telegram.me/botfather)
-* Get Chat ID at Telegram app with forward a message to [userinfobot](https://telegram.me/userinfobot) from which chat you want to receive Stats
+* Get Bot_Token from [Botfather](https://telegram.me/botfather)
+* Get Chat ID from Telegram with forwarding a message to [userinfobot](https://telegram.me/userinfobot) from which chat you want to receive the Stats
 </ul>
 
 ### Installation
@@ -147,11 +147,11 @@ See the [open issues](https://github.com/ferisystem/CoinsStats/issues) for a lis
 Dear programmer, you can help me in this project. how? read this text.
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request
 
 <!-- LICENSE -->
 ## License
