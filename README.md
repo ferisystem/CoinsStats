@@ -125,7 +125,11 @@ This is a help for installation.
    ```PY
    SUDO_ID = 'ENTER SUDO_ID'
    ```
-7. Now you have to add this command in `crontab -e` on ubuntu terminal
+7. Enter Coins & Tokens *symbol* that you want in `config.py` > `coins_list` value
+   ```PY
+   coins_list = ('coin1', 'coin2' 'token1', 'token2', etc...)
+   ```
+8. Now you have to add this command in `crontab -e` on ubuntu terminal
    ```sh
    * * * * * python3.6 ./CoinsStats/bot.py
    ```
