@@ -21,6 +21,6 @@ def return_emoji_change(price_old, price):
 		emoji_change = ""
 	elif price_old == price:
 		emoji_change = "🔸"
-	return emoji_chang
+	return emoji_change
 
 
