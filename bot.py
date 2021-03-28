@@ -24,3 +24,7 @@ def return_emoji_change(price_old, price):
 	return emoji_change
 
 
+def return_percent(price_old, price):
+	percent = ((price - price_old) / price_old) * 100
+	return percent
+
