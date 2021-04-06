@@ -28,3 +28,23 @@ def return_percent(price_old, price):
 	percent = ((price - price_old) / price_old) * 100
 	return percent
 
+
+def return_alarm(percent):
+	if abs(percent) >= 50:
+		alarm = '**♨️!!!**'
+	elif abs(percent) >= 10:
+		alarm = '**♨️!!**'
+	elif abs(percent) >= 5:
+		alarm = '**♨️!**'
+	else:
+		alarm = ''
+	return alarm
+
+
+async def send_to_destination(chatID, text, parse_mode):
+	try:
+		chatID = int(chatID)
+	except:
+		chatID = chatID
+	return await client.send_message(chatID, text, parse_mode = parse_mode, link_preview = False)
+
