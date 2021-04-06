@@ -8,7 +8,7 @@ from config import *
 
 sudoID = int(SUDO_ID)
 redis = redis.Redis(host = 'localhost', port = 6379, db = 0, decode_responses = True, encoding = 'utf-8')
-client = TelegramClient(BOT_ID, int(API_ID), API_HASH)
+client = TelegramClient(str(BOT_ID), int(API_ID), API_HASH)
 loop = asyncio.get_event_loop()
 
 
