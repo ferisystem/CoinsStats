@@ -47,6 +47,8 @@ async def send_to_destination(chatID, text, parse_mode):
 	except:
 		chatID = chatID
 	return await client.send_message(chatID, text, parse_mode = parse_mode, link_preview = False)
+
+
 async def main():
 	ti_me = datetime.now()
 	now_time = int("{:02d}{:02d}".format(ti_me.hour, ti_me.minute))
