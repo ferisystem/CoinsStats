@@ -10,6 +10,6 @@ coins_list = (
 'litecoin', 'dash', 'binance-coin',
 'cardano', 'vechain', 'ontology', 'holo',
 'elrond-erd-2', 'chainlink', 'the-sandbox',
-'cosmos', '1inch', 'polkadot',
-'ripple', 'dogecoin', 'bridge-oracle'
+'cosmos', '1inch', 'polkadot', 'reef-finance',
+'ripple', 'dogecoin', 'bridge-oracle', 'kin',
 ) # just write symbol coin/token
