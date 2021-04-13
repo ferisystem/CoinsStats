@@ -47,4 +47,28 @@ async def send_to_destination(chatID, text, parse_mode):
 	except:
 		chatID = chatID
 	return await client.send_message(chatID, text, parse_mode = parse_mode, link_preview = False)
-
+async def main():
+	ti_me = datetime.now()
+	now_time = int("{:02d}{:02d}".format(ti_me.hour, ti_me.minute))
+	try: # section_1
+		if now_time % 10 == 0:
+			text = ''
+			headers = {'Cache-Control': 'no-cache'}
+			for i in coins_list:
+				coin = requests.get('https://api.coinstats.app/public/v1/coins/{}?currency=USD'.format(i), headers = headers).json()['coin']
+				symbol = coin['symbol']
+				price = float("{:.6f}".format(coin['price']))
+				price_old = redis.get('coinstats.changes.{}'.format(symbol))
+				if price_old:
+					price_old = float(price_old)
+					emoji_change = return_emoji_change(price_old, price)
+					percent = return_percent(price_old, price)
+					alarm = return_alarm(percent)
+					if percent > 0:
+						percent = "`+{:.2f}%`".format(percent)
+					else:
+						percent = "`{:.2f}%`".format(percent)
+				else:
+					emoji_change = ''
+					percent = ''
+					alarm = '🆕💫'
