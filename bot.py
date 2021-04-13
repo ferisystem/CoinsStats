@@ -83,3 +83,4 @@ async def main():
 				text = "{}\n{} • **{:,}**$ {} {}   {}".\
 				format(text, link, price, emoji_change, percent, alarm)
 				redis.set('coinstats.changes.{}'.format(symbol), price)
+				tim_e = "{:04d}/{:02d}/{:02d} {:02d}:{:02d}".format(ti_me.year, ti_me.month, ti_me.day, ti_me.hour, ti_me.minute)
