@@ -74,3 +74,12 @@ async def main():
 					emoji_change = ''
 					percent = ''
 					alarm = '🆕💫'
+				if symbol == "BRG":
+					link = '[{0}](https://www.bw.com/newTrade/spotTradding/brg_usdt)'.format(symbol)
+				elif symbol == "KIN":
+					link = '[{0}](https://hitbtc.com/kin-to-btc)'.format(symbol)
+				else:
+					link = '[{0}](https://binance.com/en/trade/{0}_USDT)'.format(symbol)
+				text = "{}\n{} • **{:,}**$ {} {}   {}".\
+				format(text, link, price, emoji_change, percent, alarm)
+				redis.set('coinstats.changes.{}'.format(symbol), price)
