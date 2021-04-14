@@ -167,7 +167,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Alireza Fereidouni (ferisystem) - [@ferisystem](https://telegram.me/ferisystem) - ferisys@protonmail.com
+Alireza Fereidouni (Feri) - [@ferisystem](https://telegram.me/ferisystem) - ferisys@protonmail.com
 
 Project Link: [github.com/ferisystem/CoinsStats](https://github.com/ferisystem/CoinsStats)
 
