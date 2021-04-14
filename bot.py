@@ -1,9 +1,9 @@
 from telethon.sync import TelegramClient
 from datetime import datetime
+from config import *
 import requests
 import asyncio
 import redis
-from config import *
 
 
 sudoID = int(SUDO_ID)
