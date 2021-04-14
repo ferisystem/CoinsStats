@@ -94,9 +94,9 @@ async def main():
 				coinmarketcap = coinmarketcap['data']
 				text = '{}\n- • - • - • - • -\nBTC.D • {:,.2f}%\nETH.D • {:,.2f}%'\
 				'\nGold Ounce • **{:,.2f}**$ {} {} {}'.\
-				forma(text, coinmarketcap['btc_dominance'], coinmarketcap['eth_dominance'], price, emoji_change, percent, alarm)
+				format(text, coinmarketcap['btc_dominance'], coinmarketcap['eth_dominance'], price, emoji_change, percent, alarm)
 			except Exception as e:
-				await client.send_message(sudoID, "#BUG in section_2\n{}".forma(e))
+				await client.send_message(sudoID, "#BUG in section_2\n{}".format(e))
 				text = '{}\n- • - • - • - • -\nBTC.D • {}%\nETH.D • {}%'\
 				'\nGold Ounce • **{:,.2f}**$ {} {} {}'.\
-				forma(text, "-", "-", price, emoji_change, percent, alarm)
+				format(text, "-", "-", price, emoji_change, percent, alarm)
