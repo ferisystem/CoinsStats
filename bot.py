@@ -84,3 +84,19 @@ async def main():
 				format(text, link, price, emoji_change, percent, alarm)
 				redis.set('coinstats.changes.{}'.format(symbol), price)
 			tim_e = "{:04d}/{:02d}/{:02d} {:02d}:{:02d}".format(ti_me.year, ti_me.month, ti_me.day, ti_me.hour, ti_me.minute)
+			try: # section_2
+				url = 'https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest'
+				headers = {
+				  'Accepts': 'application/json',
+				  'X-CMC_PRO_API_KEY': CMP_API_KEY,
+				}
+				coinmarketcap = requests.get(url, headers = headers).json()
+				coinmarketcap = coinmarketcap['data']
+				text = '{}\n- • - • - • - • -\nBTC.D • {:,.2f}%\nETH.D • {:,.2f}%'\
+				'\nGold Ounce • **{:,.2f}**$ {} {} {}'.\
+				forma(text, coinmarketcap['btc_dominance'], coinmarketcap['eth_dominance'], price, emoji_change, percent, alarm)
+			except Exception as e:
+				await client.send_message(sudoID, "#BUG in section_2\n{}".forma(e))
+				text = '{}\n- • - • - • - • -\nBTC.D • {}%\nETH.D • {}%'\
+				'\nGold Ounce • **{:,.2f}**$ {} {} {}'.\
+				forma(text, "-", "-", price, emoji_change, percent, alarm)
