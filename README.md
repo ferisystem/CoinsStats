@@ -15,7 +15,7 @@
   <h1 align="center">Coins Stats</h3>
 
   <p align="center">
-    Stats of 18 popular coins + BTC & ETH Dominance
+    Stats of popular coins + BTC & ETH Dominance
     <br />
     <a href="#getting-started"><strong>Explore the docs »</strong></a>
     <br />
