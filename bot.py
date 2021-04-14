@@ -56,6 +56,11 @@ async def main():
 		if now_time % 10 == 0:
 			text = ''
 			headers = {'Cache-Control': 'no-cache'}
+			url = 'https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest'
+			headers2 = {
+			  'Accepts': 'application/json',
+			  'X-CMC_PRO_API_KEY': CMP_API_KEY,
+			}
 			for i in coins_list:
 				coin = requests.get('https://api.coinstats.app/public/v1/coins/{}?currency=USD'.format(i), headers = headers).json()['coin']
 				symbol = coin['symbol']
@@ -85,12 +90,7 @@ async def main():
 				redis.set('coinstats.changes.{}'.format(symbol), price)
 			tim_e = "{:04d}/{:02d}/{:02d} {:02d}:{:02d}".format(ti_me.year, ti_me.month, ti_me.day, ti_me.hour, ti_me.minute)
 			try: # section_2
-				url = 'https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest'
-				headers = {
-				  'Accepts': 'application/json',
-				  'X-CMC_PRO_API_KEY': CMP_API_KEY,
-				}
-				coinmarketcap = requests.get(url, headers = headers).json()
+				coinmarketcap = requests.get(url, headers = headers2).json()
 				coinmarketcap = coinmarketcap['data']
 				text = '{}\n- • - • - • - • -\nBTC.D • {:,.2f}%\nETH.D • {:,.2f}%'\
 				'\nGold Ounce • **{:,.2f}**$ {} {} {}'.\
