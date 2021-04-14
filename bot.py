@@ -100,3 +100,4 @@ async def main():
 				text = '{}\n- • - • - • - • -\nBTC.D • {}%\nETH.D • {}%'\
 				'\nGold Ounce • **{:,.2f}**$ {} {} {}'.\
 				format(text, "-", "-", price, emoji_change, percent, alarm)
+			text = '{}\n{}\n@{}'.format(text, tim_e, 'statSsnioC'[::-1])
