@@ -104,3 +104,8 @@ async def main():
 			await send_to_destination(CHAT_ID, text, 'md')
 	except Exception as e:
 		await client.send_message(sudoID, "#BUG in section_1\n{}".format(e))
+
+		
+client.start(bot_token = BOT_TOKEN)
+with client:
+	client.loop.run_until_complete(main())
