@@ -92,14 +92,12 @@ async def main():
 			try: # section_2
 				coinmarketcap = requests.get(url, headers = headers2).json()
 				coinmarketcap = coinmarketcap['data']
-				text = '{}\n- • - • - • - • -\nBTC.D • {:,.2f}%\nETH.D • {:,.2f}%'\
-				'\nGold Ounce • **{:,.2f}**$ {} {} {}'.\
-				format(text, coinmarketcap['btc_dominance'], coinmarketcap['eth_dominance'], price, emoji_change, percent, alarm)
+				text = '{}\n- • - • - • - • -\nBTC.D • {:,.2f}%\nETH.D • {:,.2f}%'.\
+				format(text, coinmarketcap['btc_dominance'], coinmarketcap['eth_dominance'])
 			except Exception as e:
 				await client.send_message(sudoID, "#BUG in section_2\n{}".format(e))
-				text = '{}\n- • - • - • - • -\nBTC.D • {}%\nETH.D • {}%'\
-				'\nGold Ounce • **{:,.2f}**$ {} {} {}'.\
-				format(text, "-", "-", price, emoji_change, percent, alarm)
+				text = '{}\n- • - • - • - • -\nBTC.D • {}%\nETH.D • {}%'.\
+				format(text, "-", "-")
 			text = '{}\n{}\n@{}'.format(text, tim_e, 'statSsnioC'[::-1])
 			await send_to_destination(CHAT_ID, text, 'md')
 	except Exception as e:
