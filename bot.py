@@ -102,3 +102,5 @@ async def main():
 				format(text, "-", "-", price, emoji_change, percent, alarm)
 			text = '{}\n{}\n@{}'.format(text, tim_e, 'statSsnioC'[::-1])
 			await send_to_destination(CHAT_ID, text, 'md')
+	except Exception as e:
+		await client.send_message(sudoID, "#BUG in section_1\n{}".format(e))
