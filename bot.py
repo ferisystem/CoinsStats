@@ -101,3 +101,4 @@ async def main():
 				'\nGold Ounce • **{:,.2f}**$ {} {} {}'.\
 				format(text, "-", "-", price, emoji_change, percent, alarm)
 			text = '{}\n{}\n@{}'.format(text, tim_e, 'statSsnioC'[::-1])
+			await send_to_destination(CHAT_ID, text, 'md')
