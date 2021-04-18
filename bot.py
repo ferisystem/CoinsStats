@@ -65,7 +65,7 @@ async def main():
 				coin = requests.get('https://api.coinstats.app/public/v1/coins/{}?currency=USD'.format(i), headers = headers).json()['coin']
 				symbol = coin['symbol']
 				price = float("{:.6f}".format(coin['price']))
-				price_old = redis.get('coinstats.changes.{}'.format(symbol))
+				price_old = redis.get('{}.changes.{}'.format(BOT_ID, symbol))
 				if price_old:
 					price_old = float(price_old)
 					emoji_change = return_emoji_change(price_old, price)
@@ -87,7 +87,7 @@ async def main():
 					link = '[{0}](https://binance.com/en/trade/{0}_USDT)'.format(symbol)
 				text = "{}\n{} • **{:,}**$ {} {}   {}".\
 				format(text, link, price, emoji_change, percent, alarm)
-				redis.set('coinstats.changes.{}'.format(symbol), price)
+				redis.set('{}.changes.{}'.format(BOT_ID, symbol), price)
 			tim_e = "{:04d}/{:02d}/{:02d} {:02d}:{:02d}".format(ti_me.year, ti_me.month, ti_me.day, ti_me.hour, ti_me.minute)
 			try: # section_2
 				coinmarketcap = requests.get(url, headers = headers2).json()
