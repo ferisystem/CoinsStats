@@ -176,7 +176,7 @@ Example Bot: [@CoinsStats](https://telegram.me/CoinsStats)
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Ali Najafi](https://github.com/AliNajafi1998)
-* [Iman Seyed](https://github.com/mzd245)
+* [Iman Seyed](https://github.com/Imanseyed)
 
 
 
